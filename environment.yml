@@ -2,7 +2,6 @@ name: jupyter-flipside-poc
 channels:
   - defaults
 dependencies:
-  - python=3.9
+  - python=3.8
   - pandas
   - plotly
-  - matplotlib
