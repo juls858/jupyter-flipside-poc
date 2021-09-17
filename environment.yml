@@ -5,3 +5,5 @@ dependencies:
   - python=3.8
   - pandas
   - plotly
+  - jupyter_contrib_nbextensions
+  - ipywidgets
