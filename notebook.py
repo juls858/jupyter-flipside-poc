@@ -1,26 +1,4 @@
 # %%
-%%html
-<script>
-    // AUTORUN ALL CELLS ON NOTEBOOK-LOAD!
-    require(
-        ['base/js/namespace', 'jquery'], 
-        function(jupyter, $) {
-            $(jupyter.events).on("kernel_ready.Kernel", function () {
-                console.log("Auto-running all cells-below...");
-                jupyter.actions.call('jupyter-notebook:run-all-cells-below');
-                jupyter.notebook.scroll_to_top();
-                jupyter.actions.call('jupyter-notebook:save-notebook');                
-                
-            });
-        });
-        
-        $( document ).ready(function(){
-        code_shown=false;
-        $('div.input').hide()});
-    
-    
-</script>
-# %%
 import pandas as pd
 
 pd.options.plotting.backend = "plotly"
